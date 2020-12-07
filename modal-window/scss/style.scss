@@ -1,0 +1,77 @@
+.modal-wrapper {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.75);
+   display: none;
+   place-items: center;
+
+   &.active {
+      display: grid;
+   }
+}
+
+.modal {
+   position: relative;
+   padding: 30px;
+   border-radius: $borderRadius;
+   background: $lightColor;
+   text-align: center;
+}
+
+.close {
+   position: absolute;
+   top: 18px;
+   right: 18px;
+   width: 18px;
+   height: 18px;
+   background: url("../images/icons/close.svg") center no-repeat;
+   transition: $transition1;
+   cursor: pointer;
+
+   &:hover,
+   &:focus,
+   &:active {
+      transform: scale(1.15);
+   }
+}
+
+.form-item {
+   label {
+      display: block;
+      margin: 0px 0px 8px 0px;
+   }
+
+   &:not(:last-child) {
+      margin: 0px 0px 24px 0px;
+   }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+   padding: 18px 32px;
+   font-size: 16px;
+   text-align: center;
+   color: $darkColor;
+   border: 1px solid $darkColor;
+
+   &:invalid {
+      border-color: $accentColor;
+      color: $accentColor;
+
+      &::placeholder {
+         color: $accentColor;
+      }
+   }
+}
+
+input[type="submit"] {
+   outline: none;
+   border: none;
+   box-shadow: none;
+}
