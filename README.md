@@ -30,18 +30,3 @@ https://github.com/airbnb/lottie-web/blob/master/build/player/lottie.min.js
    autoplay: true, // автовоспроизведение (true / false)
    path: 'sites/all/themes/main_theme/animations/404.json' // путь до json, сгенерированного с помощью Bodymovin
  });
- 
-
- 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
